@@ -58,3 +58,24 @@ padding: 0;
 .list-type-none{
     list-style: none;
 }
+.comapre-img{
+    height: 100px;
+    width: 100px;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 10px;
+}
+.progress-bar-fill{
+    background-color: #21ac21;
+    height: 100%;
+    left: 0;
+}
+.list-style-none{
+    list-style: none;
+}
