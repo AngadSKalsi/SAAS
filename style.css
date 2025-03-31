@@ -79,3 +79,39 @@ padding: 0;
 .list-style-none{
     list-style: none;
 }
+
+.testimonial-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%
+}
+
+.star-img{
+    width: 5px;
+    height: 5px;
+}
+
+.curated-img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #484848;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 10px; /* Adjust spacing between grid items */
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px 0px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile view */
+    }
+  }

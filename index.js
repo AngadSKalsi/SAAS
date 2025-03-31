@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 // Select all the buttons with the class 'show_more_less'
 const showMoreLessBtns = document.querySelectorAll('.show_more_less');
 
@@ -30,4 +32,82 @@ showMoreLessBtns.forEach(function(button) {
             button.textContent = 'Show More';
         }
     });
+});
+
+const swiperEl = document.querySelector('.review-slide');
+if (swiperEl) {
+    const swiper = new Swiper('.review-slide', {
+        slidesPerView: 1.5,
+        spaceBetween: 24,
+        // slidesPerGroupSkip: 4,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+          },
+      });
+}
+
+const swiperElEditor = document.querySelector('.editor-slide');
+if (swiperElEditor) {
+    const swiper = new Swiper('.editor-slide', {
+        spaceBetween: 24,
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            720: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+          },
+      });
+}
+
+const swiperElCurated = document.querySelector('.curated-slide');
+if (swiperElCurated) {
+    const swiper = new Swiper('.curated-slide', {
+        spaceBetween: 24,
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+          },
+      });
+}
+
 });
