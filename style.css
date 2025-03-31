@@ -7,7 +7,7 @@ padding: 0;
 }
 
 .text-blue{
-    color: rgb(28 111 209/1);
+    color:rgb(7, 52, 99);
 }
 .fs-14{
     font-size: 14px;
@@ -25,6 +25,13 @@ padding: 0;
 
 .underline:hover{
     text-decoration: underline;
+}
+
+.section-heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(63, 63, 70);
+    line-height: 36px;
 }
 
 .bottom-box{
@@ -45,7 +52,7 @@ padding: 0;
     right: 10px;
 }
 .search-btn{
-    background-color: rgb(37 99 235);
+    /* background-color: rgb(37 99 235); */
     color: #FFF;
     border: none;
     font-size: 14px;
@@ -83,12 +90,13 @@ padding: 0;
 .testimonial-img{
     width: 60px;
     height: 60px;
-    border-radius: 50%
+    border-radius: 50%;
+    outline: 2px solid rgb(28, 111, 209);
 }
 
 .star-img{
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
 }
 
 .curated-img{
@@ -99,8 +107,8 @@ padding: 0;
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
-    gap: 10px; /* Adjust spacing between grid items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
   }
   
   .grid-item {
@@ -112,6 +120,21 @@ padding: 0;
   
   @media (max-width: 768px) {
     .grid-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile view */
+      grid-template-columns: repeat(2, 1fr); 
     }
+  }
+
+  .nav-item{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .nav-link, .nav-link:hover{
+    color: rgb(7, 52, 99);
+  }
+
+ .nav-item .nav-link.active{
+    border: 0px;
+    border-bottom: solid 3px rgb(240, 172, 70);
+
   }
